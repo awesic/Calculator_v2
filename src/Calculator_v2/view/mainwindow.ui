@@ -1,0 +1,3170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>851</width>
+    <height>491</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>SmartCalc</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background: rgba(255, 255, 255, 0);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>851</width>
+      <height>491</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Helvetica Neue</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>ArrowCursor</cursorShape>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="currentIndex">
+     <number>2</number>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Calculator 🔢</string>
+     </attribute>
+     <widget class="QPushButton" name="btn_0">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>341</y>
+        <width>115</width>
+        <height>48</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Helvetica Neue</family>
+        <pointsize>18</pointsize>
+       </font>
+      </property>
+      <property name="toolTipDuration">
+       <number>-1</number>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+   color: white;
+   border: 1px solid;
+   border-color: rgba(255, 255, 255, 0);
+   background-color: rgb(123, 121, 120);
+}
+QPushButton:pressed {
+    background-color: rgb(145, 144, 145);
+}</string>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">simple_opt</string>
+      </attribute>
+     </widget>
+     <widget class="QPushButton" name="btn_cos">
+      <property name="geometry">
+       <rect>
+        <x>74</x>
+        <y>194</y>
+        <width>57</width>
+        <height>48</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Helvetica Neue</family>
+        <pointsize>18</pointsize>
+       </font>
+      </property>
+      <property name="toolTipDuration">
+       <number>-1</number>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+  background-color: rgba(97, 96, 96, 128);
+  color: white; 
+  border: 1px solid transparent;
+}
+
+QPushButton:pressed {
+    background-color: rgb(122, 122, 122);
+}</string>
+      </property>
+      <property name="text">
+       <string>cos</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">func_group</string>
+      </attribute>
+     </widget>
+     <widget class="QPushButton" name="btn_sin">
+      <property name="geometry">
+       <rect>
+        <x>16</x>
+        <y>194</y>
+        <width>57</width>
+        <height>48</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Helvetica Neue</family>
+        <pointsize>18</pointsize>
+       </font>
+      </property>
+      <property name="toolTipDuration">
+       <number>-1</number>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+  background-color: rgba(97, 96, 96, 128);
+  color: white; 
+  border: 1px solid transparent;
+}
+
+QPushButton:pressed {
+    background-color: rgb(122, 122, 122);
+}</string>
+      </property>
+      <property name="text">
+       <string>sin</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">func_group</string>
+      </attribute>
+     </widget>
+     <widget class="QPushButton" name="btn_5">
+      <property name="geometry">
+       <rect>
+        <x>248</x>
+        <y>243</y>
+        <width>57</width>
+        <height>48</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Helvetica Neue</family>
+        <pointsize>18</pointsize>
+       </font>
+      </property>
+      <property name="toolTipDuration">
+       <number>-1</number>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+   color: white;
+   border: 1px solid;
+   border-color: rgba(255, 255, 255, 0);
+   background-color: rgb(123, 121, 120);
+}
+QPushButton:pressed {
+    background-color: rgb(145, 144, 145);
+}</string>
+      </property>
+      <property name="text">
+       <string>5</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">simple_opt</string>
+      </attribute>
+     </widget>
+     <widget class="QPushButton" name="btn_tan">
+      <property name="geometry">
+       <rect>
+        <x>132</x>
+        <y>194</y>
+        <width>57</width>
+        <height>48</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Helvetica Neue</family>
+        <pointsize>18</pointsize>
+       </font>
+      </property>
+      <property name="toolTipDuration">
+       <number>-1</number>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+  background-color: rgba(97, 96, 96, 128);
+  color: white; 
+  border: 1px solid transparent;
+}
+
+QPushButton:pressed {
+    background-color: rgb(122, 122, 122);
+}</string>
+      </property>
+      <property name="text">
+       <string>tan</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">func_group</string>
+      </attribute>
+     </widget>
+     <widget class="QPushButton" name="btn_2">
+      <property name="geometry">
+       <rect>
+        <x>248</x>
+        <y>292</y>
+        <width>57</width>
+        <height>48</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Helvetica Neue</family>
+        <pointsize>18</pointsize>
+       </font>
+      </property>
+      <property name="toolTipDuration">
+       <number>-1</number>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+   color: white;
+   border: 1px solid;
+   border-color: rgba(255, 255, 255, 0);
+   background-color: rgb(123, 121, 120);
+}
+QPushButton:pressed {
+    background-color: rgb(145, 144, 145);
+}</string>
+      </property>
+      <property name="text">
+       <string>2</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">simple_opt</string>
+      </attribute>
+     </widget>
+     <widget class="QPushButton" name="btn_minus">
+      <property name="geometry">
+       <rect>
+        <x>364</x>
+        <y>243</y>
+        <width>57</width>
+        <height>48</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Helvetica Neue</family>
+        <pointsize>24</pointsize>
+        <bold>false</bold>
+        <strikeout>false</strikeout>
+       </font>
+      </property>
+      <property name="toolTipDuration">
+       <number>-1</number>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+  background-color: rgb(231, 158, 61);
+  border: 1px solid rgba(255, 255, 255, 0);
+  color: white;
+}
+QPushButton:pressed {
+    background-color: rgb(184, 124, 48);
+}
+</string>
+      </property>
+      <property name="text">
+       <string>-</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">simple_opt</string>
+      </attribute>
+     </widget>
+     <widget class="QPushButton" name="btn_3">
+      <property name="geometry">
+       <rect>
+        <x>306</x>
+        <y>292</y>
+        <width>57</width>
+        <height>48</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Helvetica Neue</family>
+        <pointsize>18</pointsize>
+       </font>
+      </property>
+      <property name="toolTipDuration">
+       <number>-1</number>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+   color: white;
+   border: 1px solid;
+   border-color: rgba(255, 255, 255, 0);
+   background-color: rgb(123, 121, 120);
+}
+QPushButton:pressed {
+    background-color: rgb(145, 144, 145);
+}</string>
+      </property>
+      <property name="text">
+       <string>3</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">simple_opt</string>
+      </attribute>
+     </widget>
+     <widget class="QPushButton" name="btn_acos">
+      <property name="geometry">
+       <rect>
+        <x>74</x>
+        <y>243</y>
+        <width>57</width>
+        <height>48</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Helvetica Neue</family>
+        <pointsize>18</pointsize>
+       </font>
+      </property>
+      <property name="toolTipDuration">
+       <number>-1</number>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+  background-color: rgba(97, 96, 96, 128);
+  color: white; 
+  border: 1px solid transparent;
+}
+
+QPushButton:pressed {
+    background-color: rgb(122, 122, 122);
+}</string>
+      </property>
+      <property name="text">
+       <string>acos</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">func_group</string>
+      </attribute>
+     </widget>
+     <widget class="QPushButton" name="btn_9">
+      <property name="geometry">
+       <rect>
+        <x>306</x>
+        <y>194</y>
+        <width>57</width>
+        <height>48</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Helvetica Neue</family>
+        <pointsize>18</pointsize>
+       </font>
+      </property>
+      <property name="toolTipDuration">
+       <number>-1</number>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+   color: white;
+   border: 1px solid;
+   border-color: rgba(255, 255, 255, 0);
+   background-color: rgb(123, 121, 120);
+}
+QPushButton:pressed {
+    background-color: rgb(145, 144, 145);
+}</string>
+      </property>
+      <property name="text">
+       <string>9</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">simple_opt</string>
+      </attribute>
+     </widget>
+     <widget class="QPushButton" name="btn_brk_close">
+      <property name="geometry">
+       <rect>
+        <x>74</x>
+        <y>145</y>
+        <width>57</width>
+        <height>48</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Helvetica Neue</family>
+        <pointsize>18</pointsize>
+       </font>
+      </property>
+      <property name="toolTipDuration">
+       <number>-1</number>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+  background-color: rgba(97, 96, 96, 128);
+  color: white; 
+  border: 1px solid transparent;
+}
+
+QPushButton:pressed {
+    background-color: rgb(122, 122, 122);
+}</string>
+      </property>
+      <property name="text">
+       <string>)</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">func_group</string>
+      </attribute>
+     </widget>
+     <widget class="QPushButton" name="btn_4">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>243</y>
+        <width>57</width>
+        <height>48</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Helvetica Neue</family>
+        <pointsize>18</pointsize>
+       </font>
+      </property>
+      <property name="toolTipDuration">
+       <number>-1</number>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+   color: white;
+   border: 1px solid;
+   border-color: rgba(255, 255, 255, 0);
+   background-color: rgb(123, 121, 120);
+}
+QPushButton:pressed {
+    background-color: rgb(145, 144, 145);
+}</string>
+      </property>
+      <property name="text">
+       <string>4</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">simple_opt</string>
+      </attribute>
+     </widget>
+     <widget class="QPushButton" name="btn_plus">
+      <property name="geometry">
+       <rect>
+        <x>364</x>
+        <y>292</y>
+        <width>57</width>
+        <height>48</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Helvetica Neue</family>
+        <pointsize>18</pointsize>
+        <bold>false</bold>
+        <strikeout>false</strikeout>
+       </font>
+      </property>
+      <property name="toolTipDuration">
+       <number>-1</number>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+  background-color: rgb(231, 158, 61);
+  border: 1px solid rgba(255, 255, 255, 0);
+  color: white;
+}
+QPushButton:pressed {
+    background-color: rgb(184, 124, 48);
+}
+</string>
+      </property>
+      <property name="text">
+       <string>+</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">simple_opt</string>
+      </attribute>
+     </widget>
+     <widget class="QPushButton" name="btn_dot">
+      <property name="geometry">
+       <rect>
+        <x>306</x>
+        <y>341</y>
+        <width>57</width>
+        <height>48</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Helvetica Neue</family>
+        <pointsize>23</pointsize>
+       </font>
+      </property>
+      <property name="toolTipDuration">
+       <number>-1</number>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+   color: white;
+   border: 1px solid;
+   border-color: rgba(255, 255, 255, 0);
+   background-color: rgb(123, 121, 120);
+}
+QPushButton:pressed {
+    background-color: rgb(145, 144, 145);
+}</string>
+      </property>
+      <property name="text">
+       <string>.</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">simple_opt</string>
+      </attribute>
+     </widget>
+     <widget class="QPushButton" name="btn_8">
+      <property name="geometry">
+       <rect>
+        <x>248</x>
+        <y>194</y>
+        <width>57</width>
+        <height>48</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Helvetica Neue</family>
+        <pointsize>18</pointsize>
+       </font>
+      </property>
+      <property name="toolTipDuration">
+       <number>-1</number>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+   color: white;
+   border: 1px solid;
+   border-color: rgba(255, 255, 255, 0);
+   background-color: rgb(123, 121, 120);
+}
+QPushButton:pressed {
+    background-color: rgb(145, 144, 145);
+}</string>
+      </property>
+      <property name="text">
+       <string>8</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">simple_opt</string>
+      </attribute>
+     </widget>
+     <widget class="QPushButton" name="btn_AC">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>145</y>
+        <width>57</width>
+        <height>48</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Helvetica Neue</family>
+        <pointsize>18</pointsize>
+        <bold>true</bold>
+        <strikeout>false</strikeout>
+        <kerning>false</kerning>
+       </font>
+      </property>
+      <property name="toolTipDuration">
+       <number>-1</number>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+  background-color: rgba(97, 96, 96, 128);
+  color: white; 
+  border: 1px solid transparent;
+}
+
+QPushButton:pressed {
+    background-color: rgb(122, 122, 122);
+}</string>
+      </property>
+      <property name="text">
+       <string>AC</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">simple_opt</string>
+      </attribute>
+     </widget>
+     <widget class="QPushButton" name="btn_6">
+      <property name="geometry">
+       <rect>
+        <x>306</x>
+        <y>243</y>
+        <width>57</width>
+        <height>48</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Helvetica Neue</family>
+        <pointsize>18</pointsize>
+       </font>
+      </property>
+      <property name="toolTipDuration">
+       <number>-1</number>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+   color: white;
+   border: 1px solid;
+   border-color: rgba(255, 255, 255, 0);
+   background-color: rgb(123, 121, 120);
+}
+QPushButton:pressed {
+    background-color: rgb(145, 144, 145);
+}</string>
+      </property>
+      <property name="text">
+       <string>6</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">simple_opt</string>
+      </attribute>
+     </widget>
+     <widget class="QPushButton" name="btn_eq">
+      <property name="geometry">
+       <rect>
+        <x>364</x>
+        <y>341</y>
+        <width>57</width>
+        <height>48</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Helvetica Neue</family>
+        <pointsize>18</pointsize>
+        <bold>false</bold>
+        <strikeout>false</strikeout>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+  background-color: rgb(231, 158, 61);
+  border: 1px solid rgba(255, 255, 255, 0);
+  color: white;
+}
+QPushButton:pressed {
+    background-color: rgb(184, 124, 48);
+}
+</string>
+      </property>
+      <property name="text">
+       <string>=</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">simple_opt</string>
+      </attribute>
+     </widget>
+     <widget class="QPushButton" name="btn_log">
+      <property name="geometry">
+       <rect>
+        <x>74</x>
+        <y>341</y>
+        <width>57</width>
+        <height>48</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Helvetica Neue</family>
+        <pointsize>18</pointsize>
+       </font>
+      </property>
+      <property name="toolTipDuration">
+       <number>-1</number>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+  background-color: rgba(97, 96, 96, 128);
+  color: white; 
+  border: 1px solid transparent;
+}
+
+QPushButton:pressed {
+    background-color: rgb(122, 122, 122);
+}</string>
+      </property>
+      <property name="text">
+       <string>log</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">func_group</string>
+      </attribute>
+     </widget>
+     <widget class="QPushButton" name="btn_brk_open">
+      <property name="geometry">
+       <rect>
+        <x>16</x>
+        <y>145</y>
+        <width>57</width>
+        <height>48</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Helvetica Neue</family>
+        <pointsize>18</pointsize>
+       </font>
+      </property>
+      <property name="toolTipDuration">
+       <number>-1</number>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+  background-color: rgba(97, 96, 96, 128);
+  color: white; 
+  border: 1px solid transparent;
+}
+
+QPushButton:pressed {
+    background-color: rgb(122, 122, 122);
+}</string>
+      </property>
+      <property name="text">
+       <string>(</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">func_group</string>
+      </attribute>
+     </widget>
+     <widget class="QPushButton" name="btn_ln">
+      <property name="geometry">
+       <rect>
+        <x>16</x>
+        <y>341</y>
+        <width>57</width>
+        <height>48</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Helvetica Neue</family>
+        <pointsize>18</pointsize>
+       </font>
+      </property>
+      <property name="toolTipDuration">
+       <number>-1</number>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+  background-color: rgba(97, 96, 96, 128);
+  color: white; 
+  border: 1px solid transparent;
+}
+
+QPushButton:pressed {
+    background-color: rgb(122, 122, 122);
+}</string>
+      </property>
+      <property name="text">
+       <string>ln</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">func_group</string>
+      </attribute>
+     </widget>
+     <widget class="QPushButton" name="btn_div">
+      <property name="geometry">
+       <rect>
+        <x>364</x>
+        <y>145</y>
+        <width>57</width>
+        <height>48</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Helvetica Neue</family>
+        <pointsize>18</pointsize>
+        <bold>false</bold>
+        <strikeout>false</strikeout>
+       </font>
+      </property>
+      <property name="toolTipDuration">
+       <number>-1</number>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+  background-color: rgb(231, 158, 61);
+  border: 1px solid rgba(255, 255, 255, 0);
+  color: white;
+}
+QPushButton:pressed {
+    background-color: rgb(184, 124, 48);
+}
+</string>
+      </property>
+      <property name="text">
+       <string>÷</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">simple_opt</string>
+      </attribute>
+     </widget>
+     <widget class="QPushButton" name="btn_asin">
+      <property name="geometry">
+       <rect>
+        <x>16</x>
+        <y>243</y>
+        <width>57</width>
+        <height>48</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Helvetica Neue</family>
+        <pointsize>18</pointsize>
+       </font>
+      </property>
+      <property name="toolTipDuration">
+       <number>-1</number>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+  background-color: rgba(97, 96, 96, 128);
+  color: white; 
+  border: 1px solid transparent;
+}
+
+QPushButton:pressed {
+    background-color: rgb(122, 122, 122);
+}</string>
+      </property>
+      <property name="text">
+       <string>asin</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">func_group</string>
+      </attribute>
+     </widget>
+     <widget class="QPushButton" name="btn_7">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>194</y>
+        <width>57</width>
+        <height>48</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Helvetica Neue</family>
+        <pointsize>18</pointsize>
+       </font>
+      </property>
+      <property name="toolTipDuration">
+       <number>-1</number>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+   color: white;
+   border: 1px solid;
+   border-color: rgba(255, 255, 255, 0);
+   background-color: rgb(123, 121, 120);
+}
+QPushButton:pressed {
+    background-color: rgb(145, 144, 145);
+}</string>
+      </property>
+      <property name="text">
+       <string>7</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">simple_opt</string>
+      </attribute>
+     </widget>
+     <widget class="QPushButton" name="btn_pow">
+      <property name="geometry">
+       <rect>
+        <x>16</x>
+        <y>292</y>
+        <width>57</width>
+        <height>48</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Helvetica Neue</family>
+        <pointsize>18</pointsize>
+       </font>
+      </property>
+      <property name="toolTipDuration">
+       <number>-1</number>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+  background-color: rgba(97, 96, 96, 128);
+  color: white; 
+  border: 1px solid transparent;
+}
+
+QPushButton:pressed {
+    background-color: rgb(122, 122, 122);
+}</string>
+      </property>
+      <property name="text">
+       <string>^</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">func_group</string>
+      </attribute>
+     </widget>
+     <widget class="QPushButton" name="btn_atan">
+      <property name="geometry">
+       <rect>
+        <x>132</x>
+        <y>243</y>
+        <width>57</width>
+        <height>48</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Helvetica Neue</family>
+        <pointsize>18</pointsize>
+       </font>
+      </property>
+      <property name="toolTipDuration">
+       <number>-1</number>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+  background-color: rgba(97, 96, 96, 128);
+  color: white; 
+  border: 1px solid transparent;
+}
+
+QPushButton:pressed {
+    background-color: rgb(122, 122, 122);
+}</string>
+      </property>
+      <property name="text">
+       <string>atan</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">func_group</string>
+      </attribute>
+     </widget>
+     <widget class="QPushButton" name="btn_1">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>292</y>
+        <width>57</width>
+        <height>48</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Helvetica Neue</family>
+        <pointsize>18</pointsize>
+       </font>
+      </property>
+      <property name="toolTipDuration">
+       <number>-1</number>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+   color: white;
+   border: 1px solid;
+   border-color: rgba(255, 255, 255, 0);
+   background-color: rgb(123, 121, 120);
+}
+QPushButton:pressed {
+    background-color: rgb(145, 144, 145);
+}</string>
+      </property>
+      <property name="text">
+       <string>1</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">simple_opt</string>
+      </attribute>
+     </widget>
+     <widget class="QPushButton" name="btn_mul">
+      <property name="geometry">
+       <rect>
+        <x>364</x>
+        <y>194</y>
+        <width>57</width>
+        <height>48</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Helvetica Neue</family>
+        <pointsize>18</pointsize>
+        <bold>false</bold>
+        <strikeout>false</strikeout>
+       </font>
+      </property>
+      <property name="toolTipDuration">
+       <number>-1</number>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+  background-color: rgb(231, 158, 61);
+  border: 1px solid rgba(255, 255, 255, 0);
+  color: white;
+}
+QPushButton:pressed {
+    background-color: rgb(184, 124, 48);
+}
+</string>
+      </property>
+      <property name="text">
+       <string>✕</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">simple_opt</string>
+      </attribute>
+     </widget>
+     <widget class="QPushButton" name="btn_percent">
+      <property name="geometry">
+       <rect>
+        <x>306</x>
+        <y>145</y>
+        <width>57</width>
+        <height>48</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Helvetica Neue</family>
+        <pointsize>18</pointsize>
+       </font>
+      </property>
+      <property name="toolTipDuration">
+       <number>-1</number>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+  background-color: rgba(97, 96, 96, 128);
+  color: white; 
+  border: 1px solid transparent;
+}
+
+QPushButton:pressed {
+    background-color: rgb(122, 122, 122);
+}</string>
+      </property>
+      <property name="text">
+       <string>%</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_sqrt">
+      <property name="geometry">
+       <rect>
+        <x>132</x>
+        <y>145</y>
+        <width>57</width>
+        <height>48</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Helvetica Neue</family>
+        <pointsize>18</pointsize>
+       </font>
+      </property>
+      <property name="toolTipDuration">
+       <number>-1</number>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+  background-color: rgba(97, 96, 96, 128);
+  color: white; 
+  border: 1px solid transparent;
+}
+
+QPushButton:pressed {
+    background-color: rgb(122, 122, 122);
+}</string>
+      </property>
+      <property name="text">
+       <string>√</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_pi">
+      <property name="geometry">
+       <rect>
+        <x>132</x>
+        <y>341</y>
+        <width>57</width>
+        <height>48</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Helvetica Neue</family>
+        <pointsize>18</pointsize>
+       </font>
+      </property>
+      <property name="toolTipDuration">
+       <number>-1</number>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+  background-color: rgba(118, 118, 118, 128);
+  color: white; 
+  border: 1px solid transparent;
+}
+
+QPushButton:pressed {
+    background-color: rgb(122, 122, 122);
+}</string>
+      </property>
+      <property name="text">
+       <string>π</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_mod">
+      <property name="geometry">
+       <rect>
+        <x>74</x>
+        <y>292</y>
+        <width>57</width>
+        <height>48</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Helvetica Neue</family>
+        <pointsize>18</pointsize>
+       </font>
+      </property>
+      <property name="toolTipDuration">
+       <number>-1</number>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+  background-color: rgba(97, 96, 96, 128);
+  color: white; 
+  border: 1px solid transparent;
+}
+
+QPushButton:pressed {
+    background-color: rgb(122, 122, 122);
+}</string>
+      </property>
+      <property name="text">
+       <string>mod</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="result_print">
+      <property name="geometry">
+       <rect>
+        <x>17</x>
+        <y>78</y>
+        <width>403</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Helvetica Neue</family>
+        <pointsize>27</pointsize>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>ArrowCursor</cursorShape>
+      </property>
+      <property name="mouseTracking">
+       <bool>true</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLebal {
+	qproperty-alignment: 'AlignVCenter | AlignRight';
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_x">
+      <property name="geometry">
+       <rect>
+        <x>423</x>
+        <y>341</y>
+        <width>57</width>
+        <height>48</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Helvetica Neue</family>
+        <pointsize>18</pointsize>
+       </font>
+      </property>
+      <property name="toolTipDuration">
+       <number>-1</number>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+  background-color: rgba(118, 118, 118, 128);
+  color: white; 
+  border: 1px solid transparent;
+}
+
+QPushButton:pressed {
+    background-color: rgb(122, 122, 122);
+}</string>
+      </property>
+      <property name="text">
+       <string>x</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>479</x>
+        <y>340</y>
+        <width>21</width>
+        <height>48</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Helvetica Neue</family>
+        <pointsize>20</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>=</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="input_text">
+      <property name="geometry">
+       <rect>
+        <x>17</x>
+        <y>10</y>
+        <width>404</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Helvetica Neue</family>
+        <pointsize>20</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+	background-color: rgba(255, 255, 255, 0);
+	border: rgba(255, 255, 255, 0);
+	border-bottom: 1px solid rgba(128, 128, 127, 128);
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="maxLength">
+       <number>255</number>
+      </property>
+     </widget>
+     <widget class="QDoubleSpinBox" name="x_val">
+      <property name="geometry">
+       <rect>
+        <x>498</x>
+        <y>341</y>
+        <width>90</width>
+        <height>48</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Helvetica Neue</family>
+        <pointsize>17</pointsize>
+       </font>
+      </property>
+      <property name="minimum">
+       <double>-9999999.990000000223517</double>
+      </property>
+      <property name="maximum">
+       <double>9999999.990000000223517</double>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_plot">
+      <property name="geometry">
+       <rect>
+        <x>640</x>
+        <y>370</y>
+        <width>131</width>
+        <height>38</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Helvetica Neue</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+border-radius: 15px;
+border-color: rgb(50, 50, 50);
+background-color: rgb(71, 71, 71);
+color: #fff;
+}
+
+QPushButton:pressed {
+    background-color: rgb(145, 144, 145);
+}</string>
+      </property>
+      <property name="text">
+       <string>plot 📈</string>
+      </property>
+      <property name="autoDefault">
+       <bool>true</bool>
+      </property>
+      <property name="default">
+       <bool>true</bool>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_backspace">
+      <property name="geometry">
+       <rect>
+        <x>248</x>
+        <y>145</y>
+        <width>57</width>
+        <height>48</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Helvetica Neue</family>
+        <pointsize>18</pointsize>
+        <bold>false</bold>
+        <strikeout>false</strikeout>
+        <kerning>false</kerning>
+       </font>
+      </property>
+      <property name="toolTipDuration">
+       <number>-1</number>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+  background-color: rgba(97, 96, 96, 128);
+  color: white; 
+  border: 1px solid transparent;
+}
+
+QPushButton:pressed {
+    background-color: rgb(122, 122, 122);
+}</string>
+      </property>
+      <property name="text">
+       <string>⌫</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>157</y>
+        <width>61</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Helvetica Neue</family>
+        <pointsize>19</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>x max:</string>
+      </property>
+     </widget>
+     <widget class="QDoubleSpinBox" name="y_max">
+      <property name="geometry">
+       <rect>
+        <x>510</x>
+        <y>235</y>
+        <width>90</width>
+        <height>35</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Helvetica Neue</family>
+        <pointsize>17</pointsize>
+       </font>
+      </property>
+      <property name="minimum">
+       <double>-999999.000000000000000</double>
+      </property>
+      <property name="maximum">
+       <double>999999.989999999990687</double>
+      </property>
+      <property name="value">
+       <double>10.000000000000000</double>
+      </property>
+     </widget>
+     <widget class="QDoubleSpinBox" name="y_min">
+      <property name="geometry">
+       <rect>
+        <x>510</x>
+        <y>270</y>
+        <width>90</width>
+        <height>35</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Helvetica Neue</family>
+        <pointsize>17</pointsize>
+       </font>
+      </property>
+      <property name="minimum">
+       <double>-999999.989999999990687</double>
+      </property>
+      <property name="maximum">
+       <double>999999.989999999990687</double>
+      </property>
+      <property name="value">
+       <double>-10.000000000000000</double>
+      </property>
+     </widget>
+     <widget class="QDoubleSpinBox" name="x_min">
+      <property name="geometry">
+       <rect>
+        <x>510</x>
+        <y>185</y>
+        <width>90</width>
+        <height>35</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Helvetica Neue</family>
+        <pointsize>17</pointsize>
+       </font>
+      </property>
+      <property name="minimum">
+       <double>-999999.989999999990687</double>
+      </property>
+      <property name="maximum">
+       <double>999999.989999999990687</double>
+      </property>
+      <property name="value">
+       <double>-10.000000000000000</double>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>445</x>
+        <y>277</y>
+        <width>61</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Helvetica Neue</family>
+        <pointsize>19</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>y min:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>242</y>
+        <width>61</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Helvetica Neue</family>
+        <pointsize>19</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>y max:</string>
+      </property>
+     </widget>
+     <widget class="QDoubleSpinBox" name="x_max">
+      <property name="geometry">
+       <rect>
+        <x>510</x>
+        <y>150</y>
+        <width>90</width>
+        <height>35</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Helvetica Neue</family>
+        <pointsize>17</pointsize>
+       </font>
+      </property>
+      <property name="minimum">
+       <double>-999999.000000000000000</double>
+      </property>
+      <property name="maximum">
+       <double>999999.989999999990687</double>
+      </property>
+      <property name="value">
+       <double>10.000000000000000</double>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>445</x>
+        <y>192</y>
+        <width>61</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Helvetica Neue</family>
+        <pointsize>19</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>x min:</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_e">
+      <property name="geometry">
+       <rect>
+        <x>132</x>
+        <y>292</y>
+        <width>57</width>
+        <height>48</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Helvetica Neue</family>
+        <pointsize>18</pointsize>
+       </font>
+      </property>
+      <property name="toolTipDuration">
+       <number>-1</number>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+  background-color: rgba(118, 118, 118, 128);
+  color: white; 
+  border: 1px solid transparent;
+}
+
+QPushButton:pressed {
+    background-color: rgb(122, 122, 122);
+}</string>
+      </property>
+      <property name="text">
+       <string>e</string>
+      </property>
+     </widget>
+     <widget class="QDoubleSpinBox" name="step">
+      <property name="geometry">
+       <rect>
+        <x>678</x>
+        <y>270</y>
+        <width>90</width>
+        <height>35</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Helvetica Neue</family>
+        <pointsize>17</pointsize>
+       </font>
+      </property>
+      <property name="minimum">
+       <double>0.000000000000000</double>
+      </property>
+      <property name="maximum">
+       <double>1000.000000000000000</double>
+      </property>
+      <property name="singleStep">
+       <double>0.100000000000000</double>
+      </property>
+      <property name="value">
+       <double>0.100000000000000</double>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_27">
+      <property name="geometry">
+       <rect>
+        <x>620</x>
+        <y>277</y>
+        <width>61</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Helvetica Neue</family>
+        <pointsize>19</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>step:</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_3">
+     <attribute name="title">
+      <string>Credit 💸</string>
+     </attribute>
+     <widget class="QSpinBox" name="creditAmount">
+      <property name="geometry">
+       <rect>
+        <x>18</x>
+        <y>27</y>
+        <width>321</width>
+        <height>55</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Helvetica Neue</family>
+        <pointsize>18</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QSpinBox {
+	border-radius: 13px;
+	padding-left: 10px;
+	padding-top: 5px;
+	border: 1px solid rgb(90, 90, 90);
+}</string>
+      </property>
+      <property name="buttonSymbols">
+       <enum>QAbstractSpinBox::NoButtons</enum>
+      </property>
+      <property name="maximum">
+       <number>100000000</number>
+      </property>
+      <property name="singleStep">
+       <number>100000</number>
+      </property>
+      <property name="stepType">
+       <enum>QAbstractSpinBox::DefaultStepType</enum>
+      </property>
+      <property name="value">
+       <number>500000</number>
+      </property>
+      <property name="displayIntegerBase">
+       <number>10</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>29</y>
+        <width>19</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Helvetica Neue</family>
+        <pointsize>23</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>₽</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>30</y>
+        <width>58</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Helvetica Neue</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>Amount</string>
+      </property>
+     </widget>
+     <widget class="QSpinBox" name="creditTerm">
+      <property name="geometry">
+       <rect>
+        <x>18</x>
+        <y>98</y>
+        <width>121</width>
+        <height>53</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Helvetica Neue</family>
+        <pointsize>18</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QSpinBox {
+	border-radius: 13px;
+	padding-left: 10px;
+	padding-top: 5px;
+	border: 1px solid rgb(90, 90, 90);
+}</string>
+      </property>
+      <property name="buttonSymbols">
+       <enum>QAbstractSpinBox::NoButtons</enum>
+      </property>
+      <property name="maximum">
+       <number>100</number>
+      </property>
+      <property name="value">
+       <number>3</number>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="creditYearMonth">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>111</y>
+        <width>101</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Helvetica Neue</family>
+        <pointsize>15</pointsize>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="currentText">
+       <string>year</string>
+      </property>
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <property name="maxVisibleItems">
+       <number>1</number>
+      </property>
+      <item>
+       <property name="text">
+        <string>month</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>year</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>101</y>
+        <width>58</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Helvetica Neue</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>Term</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_9">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>170</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Helvetica Neue</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>Interest rate</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_10">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>174</y>
+        <width>31</width>
+        <height>42</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Helvetica Neue</family>
+        <pointsize>20</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>%</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_creditCalculate">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>350</y>
+        <width>111</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Helvetica Neue</family>
+        <pointsize>17</pointsize>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(22, 116, 217);
+border-radius: 10px;
+color: white;
+padding: 5px;</string>
+      </property>
+      <property name="text">
+       <string>Calculate</string>
+      </property>
+     </widget>
+     <widget class="QDoubleSpinBox" name="creditInterestRate">
+      <property name="geometry">
+       <rect>
+        <x>18</x>
+        <y>167</y>
+        <width>121</width>
+        <height>53</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Helvetica Neue</family>
+        <pointsize>18</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QDoubleSpinBox {
+	border-radius: 13px;
+	padding-left: 10px;
+	padding-top: 5px;
+	border: 1px solid rgb(90, 90, 90);
+}</string>
+      </property>
+      <property name="buttonSymbols">
+       <enum>QAbstractSpinBox::NoButtons</enum>
+      </property>
+      <property name="maximum">
+       <double>100.000000000000000</double>
+      </property>
+      <property name="value">
+       <double>7.900000000000000</double>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_12">
+      <property name="geometry">
+       <rect>
+        <x>466</x>
+        <y>41</y>
+        <width>121</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Helvetica Neue</family>
+        <pointsize>15</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Total payment:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_13">
+      <property name="geometry">
+       <rect>
+        <x>443</x>
+        <y>100</y>
+        <width>149</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Helvetica Neue</family>
+        <pointsize>15</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Monthly payment:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_14">
+      <property name="geometry">
+       <rect>
+        <x>406</x>
+        <y>70</y>
+        <width>181</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Helvetica Neue</family>
+        <pointsize>15</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Overpayment on credit:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="creditOverpay">
+      <property name="geometry">
+       <rect>
+        <x>595</x>
+        <y>70</y>
+        <width>211</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Helvetica Neue</family>
+        <pointsize>14</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="creditTotalPay">
+      <property name="geometry">
+       <rect>
+        <x>595</x>
+        <y>41</y>
+        <width>211</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Helvetica Neue</family>
+        <pointsize>14</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QScrollArea" name="scrollArea">
+      <property name="geometry">
+       <rect>
+        <x>580</x>
+        <y>90</y>
+        <width>221</width>
+        <height>291</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Helvetica Neue</family>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>true</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="lineWidth">
+       <number>0</number>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>219</width>
+         <height>289</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QLabel" name="creditMonthlyPay">
+          <property name="font">
+           <font>
+            <family>Helvetica Neue</family>
+            <pointsize>14</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>21</x>
+        <y>240</y>
+        <width>161</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Helvetica Neue</family>
+       </font>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_4">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="sizeConstraint">
+        <enum>QLayout::SetMinimumSize</enum>
+       </property>
+       <item>
+        <widget class="QLabel" name="label_11">
+         <property name="font">
+          <font>
+           <family>Helvetica Neue</family>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="text">
+          <string>Type:</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <widget class="QRadioButton" name="creditAnnuity">
+           <property name="font">
+            <font>
+             <family>Helvetica Neue</family>
+             <pointsize>15</pointsize>
+            </font>
+           </property>
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="text">
+            <string>Annuity</string>
+           </property>
+           <property name="checked">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="creditDifferentiated">
+           <property name="font">
+            <font>
+             <family>Helvetica Neue</family>
+             <pointsize>15</pointsize>
+            </font>
+           </property>
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="text">
+            <string>Differentiated</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <zorder>scrollArea</zorder>
+     <zorder>layoutWidget</zorder>
+     <zorder>creditInterestRate</zorder>
+     <zorder>creditAmount</zorder>
+     <zorder>label_6</zorder>
+     <zorder>label_7</zorder>
+     <zorder>creditTerm</zorder>
+     <zorder>creditYearMonth</zorder>
+     <zorder>label_8</zorder>
+     <zorder>label_9</zorder>
+     <zorder>label_10</zorder>
+     <zorder>btn_creditCalculate</zorder>
+     <zorder>label_12</zorder>
+     <zorder>label_13</zorder>
+     <zorder>label_14</zorder>
+     <zorder>creditOverpay</zorder>
+     <zorder>creditTotalPay</zorder>
+    </widget>
+    <widget class="QWidget" name="tab_4">
+     <attribute name="title">
+      <string>Deposit 💰</string>
+     </attribute>
+     <widget class="QLabel" name="label_15">
+      <property name="geometry">
+       <rect>
+        <x>317</x>
+        <y>30</y>
+        <width>19</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Helvetica Neue</family>
+        <pointsize>23</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>₽</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_16">
+      <property name="geometry">
+       <rect>
+        <x>32</x>
+        <y>31</y>
+        <width>58</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Helvetica Neue</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>Amount</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_DepositCalculate">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>350</y>
+        <width>111</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Helvetica Neue</family>
+        <pointsize>17</pointsize>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(22, 116, 217);
+border-radius: 10px;
+color: white;</string>
+      </property>
+      <property name="text">
+       <string>Calculate</string>
+      </property>
+     </widget>
+     <widget class="QSpinBox" name="depositAmount">
+      <property name="geometry">
+       <rect>
+        <x>19</x>
+        <y>28</y>
+        <width>321</width>
+        <height>55</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Helvetica Neue</family>
+        <pointsize>18</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QSpinBox {
+	border-radius: 13px;
+	padding-left: 10px;
+	padding-top: 8px;
+	border: 1px solid rgb(90, 90, 90);
+}</string>
+      </property>
+      <property name="buttonSymbols">
+       <enum>QAbstractSpinBox::NoButtons</enum>
+      </property>
+      <property name="maximum">
+       <number>100000000</number>
+      </property>
+      <property name="singleStep">
+       <number>100000</number>
+      </property>
+      <property name="stepType">
+       <enum>QAbstractSpinBox::AdaptiveDecimalStepType</enum>
+      </property>
+      <property name="value">
+       <number>500000</number>
+      </property>
+      <property name="displayIntegerBase">
+       <number>10</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_17">
+      <property name="geometry">
+       <rect>
+        <x>32</x>
+        <y>175</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Helvetica Neue</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>Interest rate</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_18">
+      <property name="geometry">
+       <rect>
+        <x>32</x>
+        <y>106</y>
+        <width>58</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Helvetica Neue</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>Term</string>
+      </property>
+     </widget>
+     <widget class="QSpinBox" name="depositTerm">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>103</y>
+        <width>121</width>
+        <height>53</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Helvetica Neue</family>
+        <pointsize>18</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QSpinBox {
+	border-radius: 13px;
+	padding-left: 10px;
+	padding-top: 8px;
+	border: 1px solid rgb(90, 90, 90);
+}</string>
+      </property>
+      <property name="buttonSymbols">
+       <enum>QAbstractSpinBox::NoButtons</enum>
+      </property>
+      <property name="maximum">
+       <number>100</number>
+      </property>
+      <property name="value">
+       <number>3</number>
+      </property>
+     </widget>
+     <widget class="QDoubleSpinBox" name="depositInterestRate">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>172</y>
+        <width>121</width>
+        <height>53</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Helvetica Neue</family>
+        <pointsize>18</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QDoubleSpinBox {
+	border-radius: 13px;
+	padding-left: 10px;
+	padding-top: 8px;
+	border: 1px solid rgb(90, 90, 90);
+}</string>
+      </property>
+      <property name="buttonSymbols">
+       <enum>QAbstractSpinBox::NoButtons</enum>
+      </property>
+      <property name="maximum">
+       <double>100.000000000000000</double>
+      </property>
+      <property name="value">
+       <double>7.900000000000000</double>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_19">
+      <property name="geometry">
+       <rect>
+        <x>114</x>
+        <y>180</y>
+        <width>31</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Helvetica Neue</family>
+        <pointsize>20</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>%</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="depositYearMonth">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>113</y>
+        <width>101</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Helvetica Neue</family>
+        <pointsize>15</pointsize>
+       </font>
+      </property>
+      <property name="currentText">
+       <string>year</string>
+      </property>
+      <property name="maxVisibleItems">
+       <number>1</number>
+      </property>
+      <item>
+       <property name="text">
+        <string>year</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>month</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLabel" name="label_21">
+      <property name="geometry">
+       <rect>
+        <x>185</x>
+        <y>175</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Helvetica Neue</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>Tax rate</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_22">
+      <property name="geometry">
+       <rect>
+        <x>266</x>
+        <y>180</y>
+        <width>31</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Helvetica Neue</family>
+        <pointsize>20</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>%</string>
+      </property>
+     </widget>
+     <widget class="QDoubleSpinBox" name="depositTaxRate">
+      <property name="geometry">
+       <rect>
+        <x>173</x>
+        <y>172</y>
+        <width>121</width>
+        <height>53</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Helvetica Neue</family>
+        <pointsize>18</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QDoubleSpinBox {
+	border-radius: 13px;
+	padding-left: 10px;
+	padding-top: 8px;
+	border: 1px solid rgb(90, 90, 90);
+}</string>
+      </property>
+      <property name="buttonSymbols">
+       <enum>QAbstractSpinBox::NoButtons</enum>
+      </property>
+      <property name="maximum">
+       <double>100.000000000000000</double>
+      </property>
+      <property name="value">
+       <double>0.000000000000000</double>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="depositPeriodisity">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>240</y>
+        <width>191</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Helvetica Neue</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <item>
+       <property name="text">
+        <string>once a month</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>once a quarter</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>every six months</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>once a year</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>at the end of the term</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLabel" name="label_23">
+      <property name="geometry">
+       <rect>
+        <x>25</x>
+        <y>246</y>
+        <width>141</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Helvetica Neue</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>Periodisity of payment:</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="depositCapitalizOfInterest">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>280</y>
+        <width>181</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Helvetica Neue</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Capitalization of interest</string>
+      </property>
+      <property name="tristate">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_20">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>330</y>
+        <width>151</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Helvetica Neue</family>
+        <pointsize>15</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Accrued interest:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_24">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>370</y>
+        <width>141</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Helvetica Neue</family>
+        <pointsize>15</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Tax amount:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_25">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>410</y>
+        <width>161</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Helvetica Neue</family>
+        <pointsize>15</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Deposit amount
+by the end of the term:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="depositAccruedInterest">
+      <property name="geometry">
+       <rect>
+        <x>540</x>
+        <y>330</y>
+        <width>261</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Helvetica Neue</family>
+        <pointsize>14</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="depositTaxAmount">
+      <property name="geometry">
+       <rect>
+        <x>540</x>
+        <y>370</y>
+        <width>261</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Helvetica Neue</family>
+        <pointsize>14</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="depositAmontEndTerm">
+      <property name="geometry">
+       <rect>
+        <x>540</x>
+        <y>420</y>
+        <width>261</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Helvetica Neue</family>
+        <pointsize>14</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QWidget" name="layoutWidget1">
+      <property name="geometry">
+       <rect>
+        <x>430</x>
+        <y>10</y>
+        <width>401</width>
+        <height>321</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Helvetica Neue</family>
+       </font>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="5,0,0">
+         <property name="spacing">
+          <number>-1</number>
+         </property>
+         <property name="sizeConstraint">
+          <enum>QLayout::SetDefaultConstraint</enum>
+         </property>
+         <item>
+          <widget class="QLabel" name="label_28">
+           <property name="font">
+            <font>
+             <family>Helvetica Neue</family>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+padding: 5px;
+}</string>
+           </property>
+           <property name="text">
+            <string>Replenishments list / Список пополнения</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btn_replAdd">
+           <property name="font">
+            <font>
+             <family>Helvetica Neue</family>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+background-color: rgb(106, 106, 106);
+width: 36px;
+height: 20px;
+border-radius: 5px;
+color: #ffffff;
+margin-right: 10px;
+}</string>
+           </property>
+           <property name="text">
+            <string>+</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btn_replDel">
+           <property name="font">
+            <font>
+             <family>Helvetica Neue</family>
+             <pointsize>13</pointsize>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(106, 106, 106);
+width: 36px;
+height: 20px;
+border-radius: 5px;
+color: #ffffff;
+</string>
+           </property>
+           <property name="text">
+            <string>-</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QTableWidget" name="tableWidget_repl">
+         <property name="font">
+          <font>
+           <family>Helvetica Neue</family>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QTableWidget {
+ border: 1px solid rgb(128, 128, 128); /* Border */
+border-radius: 5px;
+}
+
+QTableWidget QHeaderView::section {
+ background-color: rgb(149, 150, 150);
+ font-size: 14px;
+ border-bottom: none;
+ padding: 3px;
+}
+
+QTableWidget::item:selected {
+ background-color: rgb(59, 58, 59);
+ color: rgb(0, 0, 0);
+}
+
+QTableWidget::item:focus {
+ background-color: rgb(79, 79, 79);
+ border: 1px solid #ff4081;
+ color: rgb(0, 0, 0);
+}
+
+QTableWidget::item:hover {
+ background-color: rgb(92, 94, 90);
+ color: rgb(0, 0, 0);
+}
+
+
+/* стиль для скролла */
+QTableWidget QScrollBar:vertical {
+ background: transparent;
+ width: 7px;
+ margin: 0px 0px 0px 0px;
+}
+
+QTableWidget QScrollBar::handle:vertical {
+ background: #e0e0e0;
+ border-radius: 6px;
+ min-height: 10px; 
+}
+
+QTableWidget QScrollBar::handle:vertical:hover {
+ background: #bdbdbd;
+}
+
+QTableWidget QScrollBar::sub-line:vertical {
+ background: none;
+}
+
+QTableWidget QScrollBar::add-line:vertical {
+ background: none;
+}
+</string>
+         </property>
+         <property name="editTriggers">
+          <set>QAbstractItemView::AnyKeyPressed|QAbstractItemView::DoubleClicked|QAbstractItemView::EditKeyPressed</set>
+         </property>
+         <property name="selectionMode">
+          <enum>QAbstractItemView::SingleSelection</enum>
+         </property>
+         <property name="gridStyle">
+          <enum>Qt::DashLine</enum>
+         </property>
+         <property name="cornerButtonEnabled">
+          <bool>false</bool>
+         </property>
+         <property name="columnCount">
+          <number>2</number>
+         </property>
+         <attribute name="horizontalHeaderVisible">
+          <bool>true</bool>
+         </attribute>
+         <attribute name="horizontalHeaderCascadingSectionResizes">
+          <bool>false</bool>
+         </attribute>
+         <attribute name="horizontalHeaderMinimumSectionSize">
+          <number>20</number>
+         </attribute>
+         <attribute name="horizontalHeaderStretchLastSection">
+          <bool>true</bool>
+         </attribute>
+         <attribute name="verticalHeaderVisible">
+          <bool>true</bool>
+         </attribute>
+         <attribute name="verticalHeaderDefaultSectionSize">
+          <number>30</number>
+         </attribute>
+         <column>
+          <property name="text">
+           <string>Date</string>
+          </property>
+          <property name="font">
+           <font>
+            <family>Helvetica Neue</family>
+           </font>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Amount</string>
+          </property>
+          <property name="font">
+           <font>
+            <family>Helvetica Neue</family>
+           </font>
+          </property>
+         </column>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="5,0,0">
+         <property name="sizeConstraint">
+          <enum>QLayout::SetDefaultConstraint</enum>
+         </property>
+         <item>
+          <widget class="QLabel" name="label_29">
+           <property name="font">
+            <font>
+             <family>Helvetica Neue</family>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+padding: 5px;
+}</string>
+           </property>
+           <property name="text">
+            <string>Partial withdrawals list / 
+Список частичных снятий</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btn_pwdAdd">
+           <property name="font">
+            <font>
+             <family>Helvetica Neue</family>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(106, 106, 106);
+width: 36px;
+height: 20px;
+border-radius: 5px;
+color: #ffffff;
+margin-right: 10px;
+</string>
+           </property>
+           <property name="text">
+            <string>+</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btn_pwdDel">
+           <property name="font">
+            <font>
+             <family>Helvetica Neue</family>
+             <pointsize>13</pointsize>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(106, 106, 106);
+width: 36px;
+height: 20px;
+border-radius: 5px;
+color: #ffffff;
+</string>
+           </property>
+           <property name="text">
+            <string>-</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QTableWidget" name="tableWidget_pwd">
+         <property name="font">
+          <font>
+           <family>Helvetica Neue</family>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QTableWidget {
+ border: 1px solid rgb(128, 128, 128); /* Border */
+border-radius: 5px;
+}
+
+QTableWidget QHeaderView::section {
+ background-color: rgb(149, 150, 150);
+ font-size: 14px;
+ border-bottom: none;
+ padding: 3px;
+}
+
+QTableWidget::item:selected {
+ background-color: rgb(59, 58, 59);
+ color: rgb(0, 0, 0);
+}
+
+QTableWidget::item:focus {
+ background-color: rgb(79, 79, 79);
+ border: 1px solid #ff4081;
+ color: rgb(0, 0, 0);
+}
+
+QTableWidget::item:hover {
+ background-color: rgb(92, 94, 90);
+ color: rgb(0, 0, 0);
+}
+
+
+/* стиль для скролла */
+QTableWidget QScrollBar:vertical {
+ background: transparent;
+ width: 7px;
+ margin: 0px 0px 0px 0px;
+}
+
+QTableWidget QScrollBar::handle:vertical {
+ background: #e0e0e0;
+ border-radius: 6px;
+ min-height: 10px; 
+}
+
+QTableWidget QScrollBar::handle:vertical:hover {
+ background: #bdbdbd;
+}
+
+QTableWidget QScrollBar::sub-line:vertical {
+ background: none;
+}
+
+QTableWidget QScrollBar::add-line:vertical {
+ background: none;
+}
+</string>
+         </property>
+         <property name="editTriggers">
+          <set>QAbstractItemView::AnyKeyPressed|QAbstractItemView::DoubleClicked|QAbstractItemView::EditKeyPressed</set>
+         </property>
+         <property name="selectionMode">
+          <enum>QAbstractItemView::SingleSelection</enum>
+         </property>
+         <property name="gridStyle">
+          <enum>Qt::DashLine</enum>
+         </property>
+         <property name="cornerButtonEnabled">
+          <bool>false</bool>
+         </property>
+         <property name="columnCount">
+          <number>2</number>
+         </property>
+         <attribute name="horizontalHeaderVisible">
+          <bool>true</bool>
+         </attribute>
+         <attribute name="horizontalHeaderCascadingSectionResizes">
+          <bool>false</bool>
+         </attribute>
+         <attribute name="horizontalHeaderStretchLastSection">
+          <bool>true</bool>
+         </attribute>
+         <column>
+          <property name="text">
+           <string>Date</string>
+          </property>
+          <property name="font">
+           <font>
+            <family>Helvetica Neue</family>
+           </font>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Amount</string>
+          </property>
+          <property name="font">
+           <font>
+            <family>Helvetica Neue</family>
+           </font>
+          </property>
+         </column>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <zorder>layoutWidget1</zorder>
+     <zorder>depositTaxRate</zorder>
+     <zorder>depositInterestRate</zorder>
+     <zorder>depositTerm</zorder>
+     <zorder>depositAmount</zorder>
+     <zorder>label_15</zorder>
+     <zorder>label_16</zorder>
+     <zorder>btn_DepositCalculate</zorder>
+     <zorder>label_17</zorder>
+     <zorder>label_18</zorder>
+     <zorder>label_19</zorder>
+     <zorder>depositYearMonth</zorder>
+     <zorder>label_21</zorder>
+     <zorder>label_22</zorder>
+     <zorder>depositPeriodisity</zorder>
+     <zorder>label_23</zorder>
+     <zorder>depositCapitalizOfInterest</zorder>
+     <zorder>label_20</zorder>
+     <zorder>label_24</zorder>
+     <zorder>label_25</zorder>
+     <zorder>depositAccruedInterest</zorder>
+     <zorder>depositTaxAmount</zorder>
+     <zorder>depositAmontEndTerm</zorder>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+ <buttongroups>
+  <buttongroup name="func_group"/>
+  <buttongroup name="simple_opt"/>
+ </buttongroups>
+</ui>
