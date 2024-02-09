@@ -30,3 +30,7 @@
 *.exe
 *.out
 *.app
+
+*/*/*.user
+*/*/.DS_store
+*/.DS_store
